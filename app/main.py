@@ -10,4 +10,4 @@ def is_secure(port):
 if __name__ == "__main__":
     print ("App running")
     print (f"port 22 secure : { is_secure(22)}")
-    print (f"port 443 secure : {is_secure(443}")
+    print (f"port 443 secure : {is_secure(443)}")

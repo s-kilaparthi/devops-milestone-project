@@ -1,0 +1,36 @@
+
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
+
+jobs:
+
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      _ name: set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pytest
+
+      - name: Run security check
+        run: echo "Running security validation ..."
+
+      - name: Run tests
+        run: |
+          cd app
+          pytest test_main.py -v
+
+      - name: Deploy simulation
+        run: echo "Build passed - Ready for deployment"

@@ -5,7 +5,7 @@ def add(a,b):
 
 def is_secure(port):
     dangerous_ports = [22, 3389, 0]
-    return port not in f=dangerous_ports
+    return port not in dangerous_ports
 
 if __name__ == "__main__":
     print ("App running")

@@ -1,0 +1,10 @@
+[2026-05-22 18:17:47] === Starting Health Check ===
+[2026-05-22 18:17:47] Checking Python availability...
+[2026-05-22 18:17:47] Python available: Python 3.12.3 ✅
+[2026-05-22 18:17:47] Checking disk space...
+[2026-05-22 18:17:47] Disk usage: 3% — OK ✅
+[2026-05-22 18:17:47] Checking required files exist...
+[2026-05-22 18:17:47] Found: app/main.py ✅
+[2026-05-22 18:17:47] Found: app/test_main.py ✅
+[2026-05-22 18:17:47] Found: .github/workflows/pipeline.yml ✅
+[2026-05-22 18:17:47] === Health Check Complete ===

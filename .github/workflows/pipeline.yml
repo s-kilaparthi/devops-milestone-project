@@ -28,7 +28,10 @@ jobs:
       - name: Run tests
         run: |
           cd app
-          pytest test_main.py -v
+          python -m pytest test_main.py -v
+
+      - name: Build Docker image
+        run: docker build -t devops-milestone .
 
       - name: Deploy simulation
-        run: echo "✅ Build passed - Ready for deployment"
+        run: echo "✅ Build passed - Image verified - Ready for deployment"
